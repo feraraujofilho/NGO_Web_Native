@@ -24,7 +24,7 @@ function Register() {
             const response = await api.post("ongs", formData)
 
             alert(`Your access ID: ${response.data.id}`)
-            history.push("/")
+            history.push("/profile")
         }
         catch {
             alert("Error, try it again!")
@@ -53,11 +53,10 @@ function Register() {
                 <img src={logoImg} alt="Be the Hero"/>
 
                 <h1>Sign up</h1>
-                <p>Sign up and help people find incidents about your NGOs</p>
-
+                <p>Sign up and help people to find and contribute for incidents about your NGOs</p>
                 <Link to="/" className="back-link">
                     <FiArrowLeft size={16} color="#E02041"/>
-                       Don't have an account yet
+                       Already have an account
                     </Link>
                 </section>
 
